@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRA</title>
+    <link rel="stylesheet" href="Datos compra.css">
+</head>
+<body>
+<h1>COMPRA</h1>
+<Section="container">
+    <div>
+        <h1><i class="fas fa-cube"></i>Nueva Compra</h1>
+    </div>
+    <div class="action_cliente">
+        <div class="action_cliente">
+            <h4>Datos del cliente</h4>
+            <a href="#" class="btn_new btn_new_cliente"> <i class="fas fa-plus"></i>Nuevo cliente</a>
+        </div>
+
+    </div>
+    
+   
+    
+    <input type="submit"value="Nuevo">        
+    <input type="submit"value="Guardar">
+    <input type="submit"value="Editar">
+
+    <table class="Compra">
+        <thead>
+        <tr>
+            <th width="100px">Codigo</th>
+            <th>Descripcion</th>
+            <th>Exixtencia</th>
+            <th width="100px">Cantidad</th>
+            <th class="textright">Precio</th>
+            <th class="textright">Precio Total</th>
+            <th>action</th>
+            </tr>
+            <tr>
+                <td ><input type="text" name="txt_codigo_producto" id="txt_codigo_producto"></td>
+                <td id=txt_descripcion>-</td>
+                <td id=txt_Existencia>-</td>
+                <td><input type="text" name="txt_cantidad_producto" id="txt_cantidad_producto" value="0" min="1" disabled></td>
+                <td id="txt_precio" class="textright">0.00</td>
+                <td id="Precio_total" class="textright">0.00/td>
+                <td><a href="#" id="add_producto_compra" class="link_add"></i> agregar</a></td>
+            </tr>
+            <tr>
+                <th>Codigo</th>
+                <th colspan="2">Descripcion</th>
+                <th>Cantidad</th>
+                <th class="textright">Precio</th>
+                <th class="textright">Precio Total</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody id="Detalle compra"></tbody>
+        <tr>
+            <td>1</td>
+            <td colspan="2">Alimento inicio</td>
+            <td class="textcenter">1</td>
+            <td class="textright">200000</td>
+            <td class="textright">200000</td>
+            <td class="">
+            <a class="link_delete" href="#" onclick="event.preventDefault();del_producto_detalle(1);"><i class="far fa-trash-alt"></i><a/">
+            </td>
+        </tr>
+        <td>1</td>
+            <td colspan="2">Alimento Levante</td>
+            <td class="textcenter">1</td>
+            <td class="textright">100000</td>
+            <td class="textright">100000</td>
+            <td class="">
+            <a class="link_delete" href="#" onclick="event.preventDefault();del_producto_detalle(1);"><i class="far fa-trash-alt"></i><a/">
+            </td>
+        <tr>
+        <tfoot>
+            <tr>
+                <td colspan="5" class="textright">SUBTOTAL $</td>
+                <Td class="textright">300000.00</Td>
+            </tr>
+            <Tr>
+                <td colspan="5" class="textright">IVA 5%</td>
+                <Td class="textright">15000.00</Td>
+            </Tr>
+            <Tr>
+                <td colspan="5" class="textright">TOTAL</td>
+                <Td class="textright">315000.00</Td>
+            </Tr>
+        </tfoot>
+
+        </tr>
+    </table>
+</SEction>
+
+</style>
+
+</div>
+</body>
+</html>
